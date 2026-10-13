@@ -68,6 +68,11 @@ app.get("/api/health/db", async (req, res) => {
 const PORT = process.env.PORT || 3000;
 
 // Start listening for incoming HTTP requests.
-app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
+// app.listen(PORT, () => {
+//   console.log(`Server running at http://localhost:${PORT}`);
+// });
+// const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Server running on port ${PORT}`);
 });
